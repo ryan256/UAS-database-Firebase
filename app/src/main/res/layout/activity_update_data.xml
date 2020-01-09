@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateData">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Hat"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/etitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:textSize="20dp"
+                android:layout_margin="30dp"/>
+
+
+            <EditText
+                android:id="@+id/edescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:gravity="start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minHeight="250dp"
+                android:textSize="20dp"
+                android:layout_margin="30dp"/>
+
+
+                <Button
+                    android:id="@+id/btnupdate"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Update"
+                    android:layout_gravity="center"
+                    android:textSize="20dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
